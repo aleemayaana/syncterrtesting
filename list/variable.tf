@@ -1,7 +1,4 @@
 variable "filename" {
-
-    default = {
-        "/root/file1",
-        "/root/file2"
+    type = list(string)
+    default = [ "/root/file1", "/root/file2" ]
     }
-}
